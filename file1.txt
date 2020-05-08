@@ -1,0 +1,9 @@
+git config --global alias.ignore 'update-index --skip-worktree'
+git config --global alias.unignore 'update-index --no-skip-worktree'
+git config --global alias.ignored-win '!git ls-files -v | findstr "^S"'
+git config --global alias.ignored-mac '!git ls-files -v | grep ^S'
+
+alias.ignore=update-index --skip-worktree
+alias.unignore=update-index --no-skip-worktree
+alias.ignored-win=!git ls-files -v | findstr "^S"
+alias.ignored-mac=!git ls-files -v | grep ^S
